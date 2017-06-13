@@ -27,25 +27,7 @@
             color: #f6062f;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-    </style>
-    <script>
-        function palcheck()
-        {   console.log();
-            var input = document.getElementById("test").value;
-            var simple = /[\W_]/g;
-            var input2 = input.toLowerCase().replace(simple, '');
-            var len = input2.length;
-            for (var i = 0; i < len/2; i++) 
-            {
-                if (input2[i] !== input2[len - 1 - i])
-                    {
-                    alert("NOT A PALINDROME");
-                    return;
-                    }
-            }
-             alert("This is a PALINDROME");
-        } 
-    </script>    
+    </style>    
 </head>
 <body>
         <div class="row">
@@ -69,7 +51,8 @@
             <div class="col-md-5">
                 <button type="submit" value="Submit" onclick="palcheck();">Submit</button>
             </div>    
-        </div>  
+        </div> 
+        <script src="palindrome.js"></script> 
 </body>
 </html>        
 
